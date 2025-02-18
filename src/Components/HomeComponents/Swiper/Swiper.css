@@ -41,6 +41,7 @@
   .welcome-banner {
     width: 90%; /* Increase width for mobile screens */
     padding: 0 10px;
+    margin: 20px auto; /* Adjust margin for better spacing */
   }
 
   .swiper-slide img {
@@ -48,11 +49,23 @@
     height: 300px; /* Set a fixed height for mobile screens */
     object-fit: cover; /* Ensure the image covers the entire slide */
   }
+
+  /* Prevent horizontal overflow */
+  .swiper {
+    overflow: hidden;
+  }
+
+  /* Adjust navigation buttons for mobile */
+  .swiper-button-next,
+  .swiper-button-prev {
+    display: none; /* Hide navigation buttons on mobile if they cause overflow */
+  }
 }
 
 @media (max-width: 480px) {
   .welcome-banner {
     width: 100%; /* Full width on very small screens */
+    padding: 0; /* Remove padding to prevent overflow */
   }
 
   .swiper-slide img {
