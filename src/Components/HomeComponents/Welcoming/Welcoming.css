@@ -1,0 +1,49 @@
+.welcoming-div {
+    text-align: center;
+    padding: 20px;
+    background-color: #f4f4f4;
+  }
+  
+  .welcoming-text {
+    font-size: 24px;
+    color: #333;
+    font-weight: bold;
+  }
+  
+  .welcome-collapse {
+    margin-top: 20px;
+    margin: 60px;
+  }
+  
+  .collapse-section {
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    overflow: hidden;
+  }
+  
+  .collapse-header {
+    width: 100%;
+    padding: 15px;
+    background-color: #2b3e34;
+    color: white;
+    border: none;
+    text-align: left;
+    font-size: 16px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Courier New', Courier, monospace;
+  }
+  
+  .collapse-header:hover {
+    background-color: rgb(53, 57, 38);
+  }
+  
+  .collapse-content {
+    padding: 15px;
+    background-color: #f9f9f9;
+    border-top: 1px solid #ddd;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  }

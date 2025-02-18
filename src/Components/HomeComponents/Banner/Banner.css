@@ -1,0 +1,299 @@
+.banner{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* margin-top: 100px; */
+}
+
+.bannerImage {
+  width: 300px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition */
+}
+
+.bannerImage:hover {
+  transform: scale(1.05); /* Slightly enlarge the image */
+}
+
+.bannerText{
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-weight: bolder;
+  font-size: 26px;
+  color: #31221E;
+  /* ------- */
+}
+
+.shopNow-btn {
+  padding: 10px 20px;
+  background-color: #545A3F;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: box-shadow 0.3s ease;
+  transition: color 0.5s ease;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-weight: bolder;
+}
+
+.shopNow-btn:hover {
+  box-shadow: 0 0 15px #545A3F, 0 0 30px #545A3F;
+  color: #242424;
+}
+
+
+.banner-parag{
+  color: #545A3F;
+  width: 800px;
+  margin: 30px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serifsas;
+}
+
+.banner-buttons{
+  display: flex;
+}
+
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000; /* Ensure it's above other content */
+}
+
+.modal {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 500px;
+  width: 90%;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.modal h2 {
+  margin-bottom: 15px;
+  font-size: 24px;
+  color: #333;
+}
+
+.modal p {
+  font-size: 16px;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+.close-btn {
+  padding: 10px 20px; /* Adjust padding as needed */
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.close-btn img {
+  width: 50px; /* Set the desired width */
+  height: 50px; /* Set the desired height */
+  object-fit: cover; /* Ensures the image scales properly */
+}
+
+.info{
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.info-txt{
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: bold;
+}
+
+/* ----------------------------------------- */
+
+@media (max-width: 319px) {
+  /* .banner{
+      margin-top: 550px;
+  } */
+  .bannerText{
+      display: flex;
+      justify-content: center;
+      font-size: 20px;
+  }
+  .banner-parag{
+      width: 260px;
+      margin: 30px;
+  }
+  .bannerImage{
+      width: 400px;
+  }
+}
+
+@media (min-width: 319px) and (max-width:399.98px) { 
+  /* .banner{
+      margin-top: 500px;
+  } */
+  .bannerText{
+      display: flex;
+      justify-content: center;
+      font-size: 20px;
+  }
+  .banner-parag{
+      display: flex;
+      justify-content: center;
+      width: 300px;
+      /* margin-left: 58px; */
+  }
+  .bannerImage{
+      width: 400px;
+  }
+}
+
+@media (min-width:400px) and (max-width:567px){
+  /* .banner{
+      margin-top: 500px;
+  } */
+  .bannerText{
+      display: flex;
+      justify-content: center;
+      font-size: 20px;
+  }
+  .banner-parag{
+      width: 310px;
+      margin: 30px;
+  }
+  .bannerImage{
+      width: 400px;
+  }
+}
+
+@media (min-width:567px) and (max-width:767.98px){
+  /* .banner{
+      margin-top: 400px;
+  } */
+  .bannerText{
+      display: flex;
+      justify-content: center;
+      font-size: 20px;
+  }
+  .shopNow-btn{
+      padding: 9px;
+      width: 150px;
+      height: 40px;
+      font-size: 15px;
+      background-color: #545A3F;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      transition: box-shadow 0.3s ease;
+      transition: color 0.5s ease;
+      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+      font-weight: bolder;
+  }
+  .banner-parag{
+      width: 510px;
+      margin: 30px;
+  }
+  .bannerImage{
+      width: 400px;
+  }
+
+}
+
+@media (min-width: 768px) and (max-width: 991.98px){
+  /* .banner{
+      margin-top: 400px;
+  } */
+  .bannerText{
+      display: flex;
+      justify-content: center;
+      font-size: 24px;
+  }
+  .shopNow-btn{
+      background-color: #78776f;
+      padding: 9px;
+      width: 150px;
+      color: #FFFBF4;
+      border-radius: 20px;
+      border: none;
+      height: 40px;
+      font-size: 15px;
+      transition: box-shadow 0.3s ease;
+  transition: color 0.5s ease;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-weight: bolder;
+  }
+  .banner-parag{
+      width: 610px;
+      margin: 30px;
+  }
+  .bannerImage{
+      width: 400px;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1200px){
+  /* .banner{
+      margin-top: 300px;
+  } */
+  .bannerText{
+      display: flex;
+      justify-content: center;
+      font-size: 26px;
+  }
+  .shopNow-btn{
+      background-color: #78776f;
+      padding: 9px;
+      width: 150px;
+      color: #FFFBF4;
+      border-radius: 20px;
+      border: none;
+      height: 40px;
+      font-size: 15px;
+      transition: box-shadow 0.3s ease;
+  transition: color 0.5s ease;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-weight: bolder;
+  }
+  .banner-parag{
+      width: 910px;
+      margin: 30px;
+  }
+  .bannerImage{
+      width: 350px;
+  }
+}
+
+@media (min-width:1200px) {
+  .bannerText{
+      display: flex;
+      justify-content: center;
+      font-size: 26px;
+  }
+  .shopNow-btn{
+      background-color: #78776f;
+      padding: 9px;
+      width: 150px;
+      color: #FFFBF4;
+      border-radius: 20px;
+      border: none;
+      height: 40px;
+      font-size: 15px;
+      transition: box-shadow 0.3s ease;
+  transition: color 0.5s ease;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-weight: bolder;
+  }
+  .banner-parag{
+      width: 1010px;
+      margin: 30px;
+  }
+  .bannerImage{
+      width: 400px;
+  }
+}
