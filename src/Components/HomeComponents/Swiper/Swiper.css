@@ -1,48 +1,61 @@
 .welcome-banner {
-    width: 70%;
-    max-width: 1200px; /* Adjust based on your design */
-    margin: 30px auto;
-    padding: 0 20px;
-    margin-bottom: 50px;
+  width: 70%;
+  max-width: 1200px; /* Adjust based on your design */
+  margin: 30px auto;
+  padding: 0 20px;
+  margin-bottom: 50px;
+}
+
+.swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f4f4f4;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.swiper-slide img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.swiper-pagination-bullet {
+  background-color: #fff;
+  opacity: 0.5;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: #545a3f;
+  opacity: 1;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  color: #545a3f;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .welcome-banner {
+    width: 90%; /* Increase width for mobile screens */
+    padding: 0 10px;
   }
-  
-  .swiper-slide {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #f4f4f4;
-    border-radius: 10px;
-    overflow: hidden;
-  }
-  
+
   .swiper-slide img {
-    width: 100%;
-    height: auto;
-    border-radius: 10px;
+    border-radius: 5px;
+    height: 300px; /* Set a fixed height for mobile screens */
+    object-fit: cover; /* Ensure the image covers the entire slide */
   }
-  
-  .swiper-pagination-bullet {
-    background-color: #fff;
-    opacity: 0.5;
+}
+
+@media (max-width: 480px) {
+  .welcome-banner {
+    width: 100%; /* Full width on very small screens */
   }
-  
-  .swiper-pagination-bullet-active {
-    background-color: #545a3f;
-    opacity: 1;
+
+  .swiper-slide img {
+    height: 250px; /* Adjust height for very small screens */
   }
-  
-  .swiper-button-next,
-  .swiper-button-prev {
-    color: #545a3f;
-  }
-  
-  /* Responsive adjustments */
-  @media (max-width: 768px) {
-    .welcome-banner {
-      padding: 0 10px;
-    }
-  
-    .swiper-slide img {
-      border-radius: 5px;
-    }
-  }
+}
