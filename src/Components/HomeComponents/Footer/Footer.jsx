@@ -1,9 +1,21 @@
 import React from 'react';
-import { FaFacebook, FaTwitter, FaInstagram, FaLinkedin } from 'react-icons/fa';
+import { FaWhatsapp , FaInstagram } from 'react-icons/fa';
+import { MdOutlineEmail } from "react-icons/md";
+
 import './Footer.css';
 import logo from '../../../assets/BigLogo.png'
 
 function Footer() {
+
+  const phoneNumber = '7559966190';
+  const message = "Hello, I'm interested in your products!";
+
+  const handleShopClick = () => {
+    const whatsappURL = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
+    window.open(whatsappURL, '_blank');
+  };
+
+
   return (
     <footer className='footer'>
       <div className='footer-container'>
@@ -17,35 +29,22 @@ function Footer() {
           </p>
         </div>
 
-        {/* Quick Links */}
-        <div className='footer-section'>
-          <h3 className='footer-heading'>Quick Links</h3>
-          <ul className='footer-links'>
-            <li><a href="/">Home</a></li>
-            <li><a href="/shop">Shop</a></li>
-            <li><a href="/about">About Us</a></li>
-            <li><a href="/contact">Contact Us</a></li>
-          </ul>
-        </div>
 
         {/* Social Media Links */}
         <div className='footer-section'>
           <h3 className='footer-heading'>Follow Us</h3>
           <div className='social-media'>
-            <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">
-              <FaFacebook className='social-icon' />
-            </a>
-            <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">
-              <FaTwitter className='social-icon' />
+            <a onClick={handleShopClick} target="_blank" rel="noopener noreferrer">
+              <FaWhatsapp className='social-icon' />
             </a>
             <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
               <FaInstagram className='social-icon' />
             </a>
-            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
-              <FaLinkedin className='social-icon' />
+            <a href="mailto:Peshiyoperfume@gmail.com" target="_blank" rel="noopener noreferrer">
+              <MdOutlineEmail className='social-icon' />
             </a>
           </div>
-          <p>&copy; {new Date().getFullYear()} Peshiyo. All rights reserved.</p>
+          <p className='copyright'>&copy; {new Date().getFullYear()} Peshiyo. All rights reserved.</p>
         </div>
       </div>
 

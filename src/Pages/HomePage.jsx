@@ -11,9 +11,9 @@ function HomePage() {
     <>
     <Navbar />
     <Banner />
-    <Welcoming />
     <SwiperFunction />
     <Sticky />
+    <Welcoming />
     <Footer />
     </>
   )
