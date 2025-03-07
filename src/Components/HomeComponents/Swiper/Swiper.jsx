@@ -5,9 +5,9 @@ import 'swiper/css';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
 import './Swiper.css';
-import Img1 from '../../../assets/banner1.png'
-import Img2 from '../../../assets/banner2.png'
-import Img3 from '../../../assets/banner3.png'
+import Img1 from '../../../assets/banner1.jpg'
+import Img2 from '../../../assets/banner2.jpg'
+import Img3 from '../../../assets/banner3.jpg'
 
 function SwiperFunction(){
     return (

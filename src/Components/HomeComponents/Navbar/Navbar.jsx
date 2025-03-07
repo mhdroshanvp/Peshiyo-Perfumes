@@ -1,14 +1,17 @@
 import React from 'react';
 import './Navbar.css';
 import 'animate.css';
+import { Link } from 'react-router-dom';
 
 function Navbar() {
 
   return (
     <>
-      <nav className="navbar">
-        <div className="site-name animate__animated animate__fadeIn">PESHIYO</div>
-      </nav>
+      <Link to='/'>
+        <div className="navbar">
+          <div className="site-name animate__animated animate__fadeIn">PESHIYO</div>
+        </div>
+      </Link>
     </>
   );
 }
