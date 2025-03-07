@@ -50,7 +50,7 @@ function Footer() {
 
       <div className='developer-credit'>
         <p>
-          Developed by <a href="https://www.linkedin.com/in/mhdroshanvp/" target="_blank" rel="noopener noreferrer">Roshan</a>
+          Developed by <a href="https://roshanvp.vercel.app/" target="_blank" rel="noopener noreferrer">Roshan</a>
         </p>
       </div>
 
