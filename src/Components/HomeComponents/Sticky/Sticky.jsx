@@ -41,9 +41,9 @@ function Sticky() {
 
       {/* Info Modal (Opens on page load) */}
       {info && (
-        <div className='modal-overlay'>
-          <div className='modal'>
-            <h2 className='info'>Information</h2>
+        <div className='Infomodal-overlay'>
+          <div className='Infomodal'>
+            <h2 className='infomodalHeading'>Information</h2>
             <p className='info-txt'>
               We’re currently working hard to bring you an amazing experience! Thank you for your patience as we make improvements. Please check back soon—we can’t wait to share something special with you!
             </p>

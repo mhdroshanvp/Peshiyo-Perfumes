@@ -45,7 +45,7 @@
   }
   
   /* Modal Overlay */
-  .modal-overlay {
+  .Infomodal-overlay {
     position: fixed;
     top: 0;
     left: 0;
@@ -59,7 +59,7 @@
   }
   
   /* Modal Box */
-  .modal {
+  .Infomodal {
     background-color: white;
     padding: 20px;
     border-radius: 10px;
@@ -71,7 +71,7 @@
   }
   
   /* Modal Heading */
-  .info {
+  .infomodalHeading {
     font-size: 24px;
     color: #333;
     margin-bottom: 15px;

@@ -8,6 +8,7 @@ import './Swiper.css';
 import Img1 from '../../../assets/banner1.jpg'
 import Img2 from '../../../assets/banner2.jpg'
 import Img3 from '../../../assets/banner3.jpg'
+import Img4 from '../../../assets/banner4.jpg'
 
 function SwiperFunction(){
     return (
@@ -36,6 +37,9 @@ function SwiperFunction(){
               </SwiperSlide>
               <SwiperSlide>
                 <img src={Img3} alt="Slide 3" />
+              </SwiperSlide>
+              <SwiperSlide>
+                <img src={Img4} alt="Slide 4" />
               </SwiperSlide>
             </Swiper>
           </div>

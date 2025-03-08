@@ -9,7 +9,7 @@ function Navbar() {
     <>
       <Link to='/'>
         <div className="navbar">
-          <div className="site-name animate__animated animate__fadeIn">PESHIYO</div>
+          <div className="site-name">PESHIYO</div>
         </div>
       </Link>
     </>

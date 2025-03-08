@@ -1,0 +1,256 @@
+.top-heading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+  }
+  
+  .heading-text {
+    font-size: 30px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    color: #565449;
+  }
+  
+  .top-line {
+    width: 80%;
+    margin: 10px auto;
+    border: 1px solid #56544931;
+  }
+  
+  .filter-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+    gap: 10px;
+  }
+  
+  .filter-container label {
+    font-size: 20px;
+    font-weight: 500;
+    font-family: 'Times New Roman', Times, serif;
+    color: #565449;
+  }
+
+  .filter-container label span{
+    font-weight: bolder;
+  }
+  
+  .filter-container select {
+    padding: 8px 12px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #565449;
+    background-color: #b0aea1;
+    outline: none;
+    cursor: pointer;
+  }
+  
+  .product-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .product-card {
+    background: #b0aea1;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .product-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .product-card img {
+    width: 100%;
+    max-width: 150px;
+    height: auto;
+    margin-bottom: 10px;
+  }
+  
+  .product-card h3 {
+    font-size: 18px;
+    color: #333;
+  }
+
+  .product-buttons{
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .prd-details{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 40px;
+    background-color: #2b3e34;
+    color: rgba(255, 255, 255, 0.717);;
+    border-radius: 100%;
+  }
+
+  .prd-buy{
+    align-items: center;
+    width: 100px;
+    height: 40px;
+    background-color: #2b3e34;
+    color: rgba(255, 255, 255, 0.717);
+    border-radius: 100px;
+  }
+
+  .prd-details-icon{
+    font-size: 20px;
+  }
+  
+  .size-label {
+    font-size: 14px;
+    color: #666;
+    margin-top: 5px;
+  }
+
+
+  /* ------------------------------------------------------------------- */
+  .modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+  
+  .modal {
+    background: #b0aea1;
+    width: 90%;
+    max-width: 500px;
+    border-radius: 12px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    position: relative;
+    animation: fadeIn 0.3s ease-in-out;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(-10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .selectedClosed-button {
+    position: absolute;
+    top: 12px;
+    right: 15px;
+    background: none;
+    border: none;
+    font-size: 24px;
+    color: #2b3e34;
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out;
+  }
+  
+  .selectedClosed-button:hover {
+    transform: scale(1.2);
+  }
+  
+  .modal-image {
+    width: 100%;
+    max-width: 200px;
+    border-radius: 8px;
+    margin: 15px 0;
+  }
+  
+  .modal h2 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #2b3e34;
+    margin-bottom: 10px;
+  }
+  
+  .modal-size, .modal-price, .modal-description, .modal-fragrance {
+    font-size: 16px;
+    color: #333;
+    margin: 5px 0;
+    line-height: 1.4;
+  }
+  
+  .modal-fragrance strong {
+    color: #2b3e34;
+  }
+  
+  @media (max-width: 600px) {
+    .modal {
+      width: 95%;
+      max-width: 400px;
+      padding: 15px;
+    }
+  
+    .modal h2 {
+      font-size: 22px;
+    }
+  
+    .modal-size, .modal-price, .modal-description, .modal-fragrance {
+      font-size: 14px;
+    }
+  
+    .selectedClosed-button {
+      font-size: 20px;
+    }
+  }
+  
+  /* ------------------------------------------------------------------- */
+  
+  @media (max-width: 768px) {
+    .heading-text {
+      font-size: 24px;
+    }
+  
+    .product-container {
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      padding: 10px;
+    }
+  
+    .product-card img {
+      max-width: 120px;
+    }
+  
+    .filter-container {
+      flex-direction: column;
+      gap: 5px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .heading-text {
+      font-size: 22px;
+    }
+  
+    .product-container {
+      grid-template-columns: 1fr;
+    }
+  
+    .product-card img {
+      max-width: 100px;
+    }
+  }
+  

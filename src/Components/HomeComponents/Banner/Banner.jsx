@@ -29,15 +29,6 @@ import { Link } from 'react-router-dom';
 
 function Banner() {
 
-  const phoneNumber = '7559966190';
-  const message = "Hello, I'm interested in your products!";
-
-  const handleShopClick = () => {
-    const whatsappURL = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
-    window.open(whatsappURL, '_blank');
-  };
-
-
 
   return (
     <>
@@ -47,12 +38,9 @@ function Banner() {
           Hey Welcome to <span style={{ color: '#808000', margin: '0 5px' }}>Peshiyo</span>
         </p>
         <div className='banner-buttons'>
-          {/* <button className='shopNow-btn animate__animated animate__zoomIn' onClick={handleShopClick}>
-            Shop Now
-          </button> */}
           <Link to='/shop'>
             <button className='shopNow-btn animate__animated animate__zoomIn'>
-              Shop Now
+              <img src="https://media1.giphy.com/media/MCM9C4jJu0vi3iVf0R/giphy.gif?cid=6c09b952pejfs6nbofrfu8ncsuht02vm9thukp4r3avnvz56&ep=v1_internal_gif_by_id&rid=giphy.gif&ct=s" alt="" />
             </button>
           </Link>
         </div>
