@@ -43,10 +43,14 @@ function Sticky() {
       {info && (
         <div className='Infomodal-overlay'>
           <div className='Infomodal'>
-            <h2 className='infomodalHeading'>Information</h2>
-            <p className='info-txt'>
-              We’re currently working hard to bring you an amazing experience! Thank you for your patience as we make improvements. Please check back soon—we can’t wait to share something special with you!
-            </p>
+            <h2 className='infomodalHeading'>Welcome to Peshiyo</h2>
+                <table className='info-txt'>
+                  <td>
+                  <li>Click the <strong>shopping cart</strong> icon to explore our collection</li>
+                  <li>Found your favorite? Hit <strong>Buy Now</strong> to message us on <strong>WhatsApp</strong></li>
+                  <li>Just <strong>send</strong> the pre-written text, and our team will assist you</li>
+                  </td>
+                </table>
             <button className='close-btn' onClick={() => setInfo(false)}>
               <img src="https://media.lordicon.com/icons/wired/outline/1735-emergency-exit.gif" alt="Close" />
             </button>

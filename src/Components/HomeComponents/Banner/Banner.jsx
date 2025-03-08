@@ -33,7 +33,9 @@ function Banner() {
   return (
     <>
       <div className='banner'>
-        <img src={bannerImage} className='bannerImage animate__animated animate__fadeIn' alt='bannerImg' />
+        <Link to='/shop'>
+          <img src={bannerImage} className='bannerImage animate__animated animate__fadeIn' alt='bannerImg' />
+        </Link>
         <p className='bannerText animate__animated animate__fadeInDown'>
           Hey Welcome to <span style={{ color: '#808000', margin: '0 5px' }}>Peshiyo</span>
         </p>

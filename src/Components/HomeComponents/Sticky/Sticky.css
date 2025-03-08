@@ -1,125 +1,148 @@
 /* Container for Sticky Buttons */
 .sticky-buttons {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    display: flex;
-    gap: 10px; /* Space between buttons */
-    z-index: 1000; /* Ensure it's above other content */
-  }
-  
-  /* Back to Top Button */
-  .back-to-top-btn {
-    background-color: #545a3f;
-    color: white;
-    border: none;
-    border-radius: 50%;
-    width: 40px;
-    height: 40px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-    transition: background-color 0.3s ease, transform 0.3s ease;
-  }
-  
-  .back-to-top-btn:hover {
-    background-color: #43483a;
-    transform: scale(1.1); /* Slightly enlarge on hover */
-  }
-  
-  /* Info Button */
-  .qst-btn {
-    color: #545a3f;
-    width: 40px;
-    height: 40px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
-  }
-  
-  .qst-btn:hover {
-    color: #43483a;
-  }
-  
-  /* Modal Overlay */
-  .Infomodal-overlay {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 1001; /* Ensure it's above the sticky buttons */
-  }
-  
-  /* Modal Box */
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  display: flex;
+  gap: 10px; /* Space between buttons */
+  z-index: 1000; /* Ensure it's above other content */
+}
+
+/* Back to Top Button */
+.back-to-top-btn {
+  background-color: #545a3f;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 45px;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.back-to-top-btn:hover {
+  background-color: #43483a;
+  transform: scale(1.1); /* Slightly enlarge on hover */
+}
+
+/* Modal Overlay */
+.Infomodal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1001;
+  padding: 15px;
+}
+
+/* Modal Box */
+.Infomodal {
+  background-color: white;
+  padding: 20px;
+  border-radius: 12px;
+  max-width: 500px;
+  width: 100%;
+  text-align: center;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+  position: relative;
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+/* Modal Heading */
+.infomodalHeading {
+  font-size: 22px;
+  color: #333;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+/* Modal Text */
+.info-txt {
+  display: flex;
+  flex-direction: column;
+  font-size: 18px;
+  color: #555;
+  text-align: left;
+  padding: 10px 15px;
+}
+
+.info-txt li {
+  margin-bottom: 8px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+/* Close Button */
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.close-btn img {
+  width: 40px;
+  height: 40px;
+}
+
+/* Tooltip for Close Button */
+.close-btn::after {
+  content: "Close";
+  position: absolute;
+  top: -25px;
+  right: 0;
+  background-color: #333;
+  color: white;
+  padding: 5px 8px;
+  border-radius: 5px;
+  font-size: 12px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.close-btn:hover::after {
+  opacity: 1;
+}
+
+/* Responsive Design */
+@media (max-width: 480px) {
   .Infomodal {
-    background-color: white;
-    padding: 20px;
-    border-radius: 10px;
-    max-width: 400px;
-    width: 90%;
-    text-align: center;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-    position: relative; /* For positioning the close button */
+      max-width: 90%;
+      padding: 15px;
   }
   
-  /* Modal Heading */
   .infomodalHeading {
-    font-size: 24px;
-    color: #333;
-    margin-bottom: 15px;
+      font-size: 20px;
   }
-  
-  /* Modal Text */
+
   .info-txt {
-    font-size: 16px;
-    color: #555;
-    margin-bottom: 20px;
+      font-size: 16px;
   }
-  
-  /* Close Button */
-  .close-btn {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    background: none;
-    border: none;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  
+
   .close-btn img {
-    width: 50px;
-    height: 40px;
-    object-fit: cover;
+      width: 35px;
+      height: 35px;
   }
-  
-  /* Tooltip for Close Button */
-  .close-btn::after {
-    content: "Click me for leaving";
-    position: absolute;
-    top: -30px;
-    right: 0;
-    background-color: #333;
-    color: white;
-    padding: 5px 10px;
-    border-radius: 5px;
-    font-size: 12px;
-    white-space: nowrap;
-    opacity: 0;
-    transition: opacity 0.3s ease;
-    pointer-events: none;
+}
+
+/* Animation */
+@keyframes fadeIn {
+  from {
+      opacity: 0;
+      transform: scale(0.9);
   }
-  
-  .close-btn:hover::after {
-    opacity: 1;
+  to {
+      opacity: 1;
+      transform: scale(1);
   }
+}
