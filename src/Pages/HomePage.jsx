@@ -14,8 +14,8 @@ function HomePage() {
     <SwiperFunction />
     <Banner />
     <Sticky />
-    <Welcoming />
     <Blog />
+    <Welcoming />
     <Footer />
     </>
   )
