@@ -22,45 +22,43 @@
   color: #31221E;
 }
 
-.shopNow-btn {
-  display:  flex;
-  justify-content: center;
-  align-items: center;
-  border: none;
-  cursor: pointer;
-  background-color: transparent;
-  transition: box-shadow 0.3s ease, 0.5s ease;
-  width: 70px;
-  height: 60px;
+/* --------------------------------------------------------- */
+html, body {
+  height: 100%;
 }
+
+.wrap {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.shopNow-btn {
+  width: 140px;
+  height: 45px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
+  font-weight: 500;
+  color: #000;
+  background-color: #fff;
+  border: none;
+  border-radius: 45px;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+  outline: none;
+  }
 
 .shopNow-btn:hover {
-  box-shadow: 0 0 15px #2b3e34, 0 0 30px #2b3e34;
+  background-color: #808000;
+  box-shadow: 0px 15px 20px #808000;
+  color: #fff;
+  transform: translateY(-7px);
 }
-
-.shopNow-btn img{
-  width: 60px;
-}
-
-.shopNow-btn::after{
-  content: "Shop Now";
-  position: absolute;
-  left:80px;
-  right: 60;
-  background-color: #333;
-  color: white;
-  padding: 5px 10px;
-  border-radius: 5px;
-  font-size: 12px;
-  white-space: nowrap;
-  opacity: 0;
-  transition: opacity 0.3s ease;
-  pointer-events: none;
-}
-
-.shopNow-btn:hover::after{
-  opacity: 1;
-}
+/* --------------------------------------------------------- */
 
 
 .banner-parag{
@@ -253,3 +251,5 @@
       width: 400px;
   }
 }
+
+

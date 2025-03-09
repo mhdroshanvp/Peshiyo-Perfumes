@@ -5,15 +5,17 @@ import Welcoming from '../Components/HomeComponents/Welcoming/Welcoming.jsx'
 import SwiperFunction from '../Components/HomeComponents/Swiper/Swiper.jsx'
 import Footer from '../Components/HomeComponents/Footer/Footer.jsx'
 import Sticky from '../Components/HomeComponents/Sticky/Sticky.jsx'
+import Blog from '../Components/HomeComponents/Blog/Blog.jsx'
 
 function HomePage() {
   return (
     <>
     <Navbar />
-    <Banner />
     <SwiperFunction />
+    <Banner />
     <Sticky />
     <Welcoming />
+    <Blog />
     <Footer />
     </>
   )
