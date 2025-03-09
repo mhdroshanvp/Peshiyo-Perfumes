@@ -44,13 +44,16 @@ function Footer() {
               <MdOutlineEmail className='social-icon' />
             </a>
           </div>
-          <p className='copyright'>&copy; {new Date().getFullYear()} Peshiyo. All rights reserved.</p>
+          <p className='copyright'>Meet the developer <a style={{color:'white'}} href="https://roshanvp.vercel.app/" target="_blank" rel="noopener noreferrer">roshan</a></p>
         </div>
       </div>
 
+      
+
       <div className='developer-credit'>
         <p>
-          Developed by <a href="https://roshanvp.vercel.app/" target="_blank" rel="noopener noreferrer">Roshan</a>
+          {/* Developed by <a href="https://roshanvp.vercel.app/" target="_blank" rel="noopener noreferrer">Roshan</a> */}
+          <p>&copy; 2025 Peshiyo. All rights reserved.</p>
         </p>
       </div>
 
