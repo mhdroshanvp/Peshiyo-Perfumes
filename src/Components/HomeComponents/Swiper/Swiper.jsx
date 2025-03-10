@@ -14,6 +14,7 @@ import Img7 from '../../../assets/banner7.jpg'
 import Img8 from '../../../assets/banner8.jpg'
 import Img9 from '../../../assets/banner9.jpg'
 import Img10 from '../../../assets/banner10.jpg'
+import Img11 from '../../../assets/banner11.jpg'
 
 function SwiperFunction(){
     return (
@@ -41,6 +42,7 @@ function SwiperFunction(){
               <SwiperSlide><img src={Img8} alt="Slide 8" /></SwiperSlide>
               <SwiperSlide><img src={Img9} alt="Slide 9" /></SwiperSlide>
               <SwiperSlide><img src={Img10} alt="Slide 10" /></SwiperSlide>
+              <SwiperSlide><img src={Img11} alt="Slide 11" /></SwiperSlide>
             </Swiper>
         </div>
     );

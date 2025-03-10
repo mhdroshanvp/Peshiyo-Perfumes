@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "./TopSection.css";
 import bottle1 from "../../assets/bottle-1.png";
 import bottle2 from "../../assets/bottle-2.jpg";
-import bottle3 from "../../assets/bottle-3.jpg";
+import bottle3 from "../../assets/bannerImg1.png";
 
 import { GiDelicatePerfume } from "react-icons/gi";
 
@@ -28,7 +28,7 @@ function TopSection() {
       id: 2, 
       name: "PESHIYO PERFUME B", 
       size: "6ML", 
-      price: [150, 250, 350, 450], 
+      price: [100,600], 
       image: bottle2, 
       description: "An enchanting blend of floral and citrus notes.",
       fragranceNotes: "Rose, Jasmine, Bergamot",
@@ -38,18 +38,39 @@ function TopSection() {
       id: 3, 
       name: "PESHIYO PERFUME C", 
       size: "3ML", 
-      price: [100, 200, 300], 
+      price: [50,500], 
       image: bottle1, 
       description: "A bold and intense fragrance with deep spicy tones.",
       fragranceNotes: "Oud, Cardamom, Patchouli",
       message:"Hello, I'm interested in ordering PESHIYO PERFUME C ,3ML Size. Could you provide more details?"
+    },
+    { 
+      id: 4, 
+      name: "SINGLE PACK ARABIC PERFUME", 
+      size: "8ML", 
+      price: [200], 
+      image: bottle3, 
+      description: "A bold and intense fragrance with deep spicy tones.",
+      fragranceNotes: "Oud, Cardamom, Patchouli",
+      message:"Hello, I'm interested in ordering SINGLE PACK ARABIC PERFUME ,8ML Size. Could you provide more details?"
+    },
+    { 
+      id: 4, 
+      name: "SINGLE PACK FRENCH PERFUME", 
+      size: "8ML", 
+      price: [150], 
+      image: bottle3, 
+      description: "A bold and intense fragrance with deep spicy tones.",
+      fragranceNotes: "Oud, Cardamom, Patchouli",
+      message:"Hello, I'm interested in ordering SINGLE PACK FRENCH PERFUME ,8ML Size. Could you provide more details?"
     }
   ];
 
   const combos = [
-    { id: 4, name: "COMBO PACK 6 PERFUMES", size: "8ML", price: 699 },
-    { id: 5, name: "COMBO PACK 4 PERFUMES", size: "8ML", price: 499 },
-    { id: 6, name: "ARABIC PACK 2 PERFUMES", size: "8ML", price: 399 },
+    { id: 4, name: "COMBO PACK 4 PERFUMES", size: "8ML", price: 799,og:"Arabian fragrance" },
+    { id: 5, name: "COMBO PACK 4 PERFUMES", size: "8ML", price: 599,og:"French fragrance" },
+    { id: 6, name: "COMBO PACK 2 PERFUMES", size: "8ML", price: 399,og:"Arabic fragrance" },
+    { id: 7, name: "COMBO PACK 2 PERFUMES", size: "8ML", price: 299 ,og:"French fragrance"},
   ];
 
 
@@ -135,7 +156,7 @@ function TopSection() {
               <img src={product.image} alt={product.name} />
               <h3>{product.name}</h3>
               <p className="size-label">Size: {product.size}</p>
-              <p className="price-label">Price: {Array.isArray(product.price) ? product.price.join(' / ') : product.price} Rs</p>
+              <p className="price-label">Price: {Array.isArray(product.price) ? product.price.join(' - ') : product.price} Rs</p>
               <div className="product-buttons">
                 <button className="prd-details" onClick={() => openModal(product)}><GiDelicatePerfume className="prd-details-icon" /></button>
                 <button className="prd-buy" onClick={() => handleBuyBtn(product)}>Buy Now</button>
@@ -157,6 +178,7 @@ function TopSection() {
           filteredCombos.map((combo) => (
             <div key={combo.id} className="product-card">
               <h3>{combo.name}</h3>
+              <h4>{combo.og}</h4>
               <p className="size-label">Size: {combo.size}</p>
               <p className="price-label">Price: {combo.price} Rs</p>
               <button className="prd-buy" onClick={() => handleBuyBtn(combo, true)}>Buy Now</button>
