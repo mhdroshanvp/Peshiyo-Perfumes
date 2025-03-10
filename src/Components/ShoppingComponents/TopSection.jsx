@@ -1,10 +1,18 @@
-import React, { useState } from "react";
+import React, { useState,useRef } from "react";
 import "./TopSection.css";
-import bottle1 from "../../assets/bottle-1.png";
-import bottle2 from "../../assets/bottle-2.jpg";
-import bottle3 from "../../assets/bannerImg1.png";
+import bottle1 from "../../assets/prd1.jpg";
+import bottle2 from "../../assets/prd2.jpg";
+import bottle3 from "../../assets/prd3.jpg";
+import bottle4 from "../../assets/prd4.jpg";
+import bottle5 from "../../assets/prd5.jpg";
+import bottle6 from "../../assets/prd6.jpg";
+import bottle7 from "../../assets/prd7.jpg";
+import bottle8 from "../../assets/prd8.jpg";
+import bottle9 from "../../assets/prd9.jpg";
 
 import { GiDelicatePerfume } from "react-icons/gi";
+import { FaInfoCircle } from "react-icons/fa";
+
 
 
 function TopSection() {
@@ -12,65 +20,134 @@ function TopSection() {
   const [selectedPrice, setSelectedPrice] = useState("All");
   const [selectedProduct, setSelectedProduct] = useState(null);
 
+  const comboSectionRef = useRef(null);
+
+
+  const scrollToCombos = () => {
+    if (comboSectionRef.current) {
+      comboSectionRef.current.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
 
   const products = [
-    { 
-      id: 1, 
-      name: "PESHIYO PERFUME A", 
-      size: "8ML", 
-      price: [150, 250], 
-      image: bottle3, 
+    {
+      id: 1,
+      name: "OUD LAVENDER",
+      size: "8ML | 6ML",
+      price: [350, 250],
+      image: bottle1,
       description: "A rich and sophisticated scent with woody undertones.",
       fragranceNotes: "Sandalwood, Musk, Amber",
-      message:"Hello, I'm interested in ordering PESHIYO PERFUME A ,8ML Size. Could you provide more details?"
+      message: "Hello, I'm interested in ordering PESHIYO PERFUME A ,8ML Size. Could you provide more details?"
     },
-    { 
-      id: 2, 
-      name: "PESHIYO PERFUME B", 
-      size: "6ML", 
-      price: [100,600], 
-      image: bottle2, 
+    {
+      id: 2,
+      name: "WHITE OUD",
+      size: "8ML | 6ML",
+      price: [400, 250],
+      image: bottle2,
       description: "An enchanting blend of floral and citrus notes.",
       fragranceNotes: "Rose, Jasmine, Bergamot",
-      message:"Hello, I'm interested in ordering PESHIYO PERFUME B ,6ML Size. Could you provide more details?"
+      message: "Hello, I'm interested in ordering PESHIYO PERFUME B ,6ML Size. Could you provide more details?"
     },
-    { 
-      id: 3, 
-      name: "PESHIYO PERFUME C", 
-      size: "3ML", 
-      price: [50,500], 
-      image: bottle1, 
+    {
+      id: 3,
+      name: "KUWAITI OUD",
+      size: "8ML | 6ML",
+      price: [400, 250],
+      image: bottle2,
       description: "A bold and intense fragrance with deep spicy tones.",
       fragranceNotes: "Oud, Cardamom, Patchouli",
-      message:"Hello, I'm interested in ordering PESHIYO PERFUME C ,3ML Size. Could you provide more details?"
+      message: "Hello, I'm interested in ordering PESHIYO PERFUME C ,3ML Size. Could you provide more details?"
     },
-    { 
-      id: 4, 
-      name: "SINGLE PACK ARABIC PERFUME", 
-      size: "8ML", 
-      price: [200], 
-      image: bottle3, 
+    {
+      id: 4,
+      name: "THE GOLD BEAST",
+      size: "8ML | 6ML | 3ML",
+      price: [200, 150, 100],
+      image: bottle3,
       description: "A bold and intense fragrance with deep spicy tones.",
       fragranceNotes: "Oud, Cardamom, Patchouli",
-      message:"Hello, I'm interested in ordering SINGLE PACK ARABIC PERFUME ,8ML Size. Could you provide more details?"
+      message: "Hello, I'm interested in ordering SINGLE PACK ARABIC PERFUME ,8ML Size. Could you provide more details?"
     },
-    { 
-      id: 4, 
-      name: "SINGLE PACK FRENCH PERFUME", 
-      size: "8ML", 
-      price: [150], 
-      image: bottle3, 
+    {
+      id: 5,
+      name: "HUGO BOSS",
+      size: "8ML | 6ML",
+      price: [150, 100],
+      image: bottle4,
       description: "A bold and intense fragrance with deep spicy tones.",
       fragranceNotes: "Oud, Cardamom, Patchouli",
-      message:"Hello, I'm interested in ordering SINGLE PACK FRENCH PERFUME ,8ML Size. Could you provide more details?"
+      message: "Hello, I'm interested in ordering SINGLE PACK FRENCH PERFUME ,8ML Size. Could you provide more details?"
+    },
+    {
+      id: 6,
+      name: "CREED SILVER",
+      size: "8ML | 6ML",
+      price: [200, 150],
+      image: bottle5,
+      description: "A bold and intense fragrance with deep spicy tones.",
+      fragranceNotes: "Oud, Cardamom, Patchouli",
+      message: "Hello, I'm interested in ordering SINGLE PACK FRENCH PERFUME ,8ML Size. Could you provide more details?"
+    },
+    {
+      id: 7,
+      name: "ROYAL OUD",
+      size: "8ML | 6ML | 3ML",
+      price: [500, 350, 250],
+      image: bottle2,
+      description: "A bold and intense fragrance with deep spicy tones.",
+      fragranceNotes: "Oud, Cardamom, Patchouli",
+      message: "Hello, I'm interested in ordering SINGLE PACK FRENCH PERFUME ,8ML Size. Could you provide more details?"
+    },
+    {
+      id: 8,
+      name: "VELVET DESSERT",
+      size: "8ML | 3ML",
+      price: [150, 100],
+      image: bottle9,
+      description: "A bold and intense fragrance with deep spicy tones.",
+      fragranceNotes: "Oud, Cardamom, Patchouli",
+      message: "Hello, I'm interested in ordering SINGLE PACK FRENCH PERFUME ,8ML Size. Could you provide more details?"
+    },
+    {
+      id: 9,
+      name: "BERRY FRUITY",
+      size: "8ML | 6ML",
+      price: [150, 100],
+      image: bottle1,
+      description: "A bold and intense fragrance with deep spicy tones.",
+      fragranceNotes: "Oud, Cardamom, Patchouli",
+      message: "Hello, I'm interested in ordering SINGLE PACK FRENCH PERFUME ,8ML Size. Could you provide more details?"
+    },
+    {
+      id: 9,
+      name: "ARABIC EDITION",
+      size: "8ML | 6ML | 3ML",
+      price: [200, 150, 100],
+      image: bottle8,
+      description: "A bold and intense fragrance with deep spicy tones.",
+      fragranceNotes: "Oud, Cardamom, Patchouli",
+      message: "Hello, I'm interested in ordering SINGLE PACK FRENCH PERFUME ,8ML Size. Could you provide more details?"
+    },
+    {
+      id: 10,
+      name: "PARIS PARADISE",
+      size: "8ML | 6ML | 3ML",
+      price: [200, 150, 100],
+      image: bottle7,
+      description: "A bold and intense fragrance with deep spicy tones.",
+      fragranceNotes: "Oud, Cardamom, Patchouli",
+      message: "Hello, I'm interested in ordering SINGLE PACK FRENCH PERFUME ,8ML Size. Could you provide more details?"
     }
   ];
 
   const combos = [
-    { id: 4, name: "COMBO PACK 4 PERFUMES", size: "8ML", price: 799,og:"Arabian fragrance" },
-    { id: 5, name: "COMBO PACK 4 PERFUMES", size: "8ML", price: 599,og:"French fragrance" },
-    { id: 6, name: "COMBO PACK 2 PERFUMES", size: "8ML", price: 399,og:"Arabic fragrance" },
-    { id: 7, name: "COMBO PACK 2 PERFUMES", size: "8ML", price: 299 ,og:"French fragrance"},
+    { id: 4, name: "COMBO PACK 4 PERFUMES", size: "8ML", price: 799, og: "Arabian fragrance" },
+    { id: 5, name: "COMBO PACK 4 PERFUMES", size: "8ML", price: 599, og: "French fragrance" },
+    { id: 6, name: "COMBO PACK 2 PERFUMES", size: "8ML", price: 399, og: "Arabic fragrance" },
+    { id: 7, name: "COMBO PACK 2 PERFUMES", size: "8ML", price: 299, og: "French fragrance" },
   ];
 
 
@@ -111,16 +188,16 @@ function TopSection() {
 
   const handleBuyBtn = (item, isCombo = false) => {
     const whatsappNumber = "7559966190";
-  
+
     const message = isCombo
       ? `Hello, I'm interested in ordering the ${item.name} combo pack of size ${item.size} for ${item.price} Rs. Could you provide more details?`
       : item.message;
-  
+
     const whatsappURL = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(message)}`;
     window.open(whatsappURL, "_blank");
   };
-  
-  
+
+
 
   return (
     <>
@@ -129,7 +206,14 @@ function TopSection() {
       </div>
       <hr className="top-line" />
 
-      <div className="filter-container">
+      {/* Checkout Combos Button */}
+      <div className="combo-btn-container">
+        <button className="combo-btn" onClick={scrollToCombos}>
+          Checkout Combo's
+        </button>
+      </div>
+
+      {/* <div className="filter-container">
         <label>Filter by Size:</label>
         <select onChange={(e) => setSelectedSize(e.target.value)}>
           <option value="All">All</option>
@@ -146,19 +230,19 @@ function TopSection() {
           <option value="400-699">₹400 - ₹699</option>
           <option value="700+">₹700+</option>
         </select>
-      </div>
+      </div> */}
 
 
       <div className="product-container">
         {filteredProducts.length > 0 ? (
           filteredProducts.map((product) => (
             <div key={product.id} className="product-card">
-              <img src={product.image} alt={product.name} />
+              {/* <img src={product.image} alt={product.name} /> */}
               <h3>{product.name}</h3>
               <p className="size-label">Size: {product.size}</p>
-              <p className="price-label">Price: {Array.isArray(product.price) ? product.price.join(' - ') : product.price} Rs</p>
+              <p className="price-label">Price: {Array.isArray(product.price) ? product.price.join(' | ') : product.price} Rs</p>
               <div className="product-buttons">
-                <button className="prd-details" onClick={() => openModal(product)}><GiDelicatePerfume className="prd-details-icon" /></button>
+                <button className="prd-details" onClick={() => openModal(product)}><FaInfoCircle className="prd-details-icon" /></button>
                 <button className="prd-buy" onClick={() => handleBuyBtn(product)}>Buy Now</button>
               </div>
             </div>
@@ -169,7 +253,7 @@ function TopSection() {
       </div>
 
 
-      <div className="top-heading">
+      <div className="top-heading" ref={comboSectionRef}>
         <p className="heading-text">Combo Packs</p>
       </div>
       <hr className="top-line" />
@@ -196,7 +280,7 @@ function TopSection() {
         <div className="modal-overlay selectedProduct">
           <div className="modal selectedModal">
             <button className="selectedClosed-button" onClick={closeModal}>&times;</button>
-            <img src={selectedProduct.image} alt={selectedProduct.name} className="modal-image"/>
+            <img src={selectedProduct.image} alt={selectedProduct.name} className="modal-image" />
             <h2>{selectedProduct.name}</h2>
             <p className="modal-size">Size: {selectedProduct.size}</p>
             <p className="modal-price">Price: {selectedProduct.price.join(" / ")} Rs</p>
