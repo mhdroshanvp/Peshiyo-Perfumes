@@ -15,6 +15,7 @@ import { FaInfoCircle } from "react-icons/fa";
 
 
 
+
 function TopSection() {
   const [selectedSize, setSelectedSize] = useState("All");
   const [selectedPrice, setSelectedPrice] = useState("All");
@@ -212,6 +213,7 @@ function TopSection() {
           Checkout Combo's
         </button>
       </div>
+
 
       {/* <div className="filter-container">
         <label>Filter by Size:</label>

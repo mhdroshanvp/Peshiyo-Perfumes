@@ -1,0 +1,126 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+/* Modal Box */
+.login-box {
+  width: 90%;
+  max-width: 400px;
+  padding: 30px;
+  background: #b0aea14c;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.6);
+  position: relative;
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+/* Close Button */
+.close-btn {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  font-size: 20px;
+  color: #fff;
+  background: none;
+  border: none;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.close-btn:hover {
+  color: #f40303;
+}
+
+/* Headings */
+.login-box h2 {
+  color: #fff;
+  margin-bottom: 20px;
+  font-size: 24px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+/* Input Fields */
+.user-box {
+  position: relative;
+  margin-bottom: 25px;
+}
+
+.user-box input,
+.user-box textarea {
+  width: 100%;
+  padding: 10px 0;
+  font-size: 16px;
+  color: #fff;
+  border: none;
+  border-bottom: 1px solid #b8b8b8;
+  outline: none;
+  background: transparent;
+  resize: none;
+}
+
+.user-box label {
+  position: absolute;
+  top: 10px;
+  left: 0;
+  font-size: 16px;
+  color: #fff;
+  transition: 0.5s;
+  pointer-events: none;
+  font-size: 14px;
+}
+
+.user-box input:focus ~ label,
+.user-box input:valid ~ label,
+.user-box textarea:focus ~ label,
+.user-box textarea:valid ~ label {
+  top: -14px;
+  font-size: 11px;
+  color: #b0aea1;
+}
+
+/* Submit Button */
+.submit-btn {
+  width: 50%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px b0aea14c solid;
+  background-color: transparent;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  color: rgba(255, 255, 255, 0.671);
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.submit-btn:hover {
+  background: #b0aea121;
+  color: #ffffff  ;
+}
+
+/* Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
