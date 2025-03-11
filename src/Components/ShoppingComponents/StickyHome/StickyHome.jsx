@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import './StickyHome.css';
 import { FaHome } from "react-icons/fa";
 import { FaArrowUp } from "react-icons/fa";
+import { Link } from 'react-router-dom';
 
 function StickyHome() {    
   const [showButton, setShowButton] = useState(false);
@@ -23,9 +24,11 @@ function StickyHome() {
     <>
       {showButton && (
         <div className='sticky-buttons'>
-          <button className='back-to-top-btn' onClick={scrollToTop}>
-            <FaHome />
-          </button>
+          <Link to='/'>
+            <button className='back-to-top-btn' >
+              <FaHome />
+            </button>
+          </Link>
           <button className='back-to-top-btn' onClick={scrollToTop}>
             <FaArrowUp />
           </button>
