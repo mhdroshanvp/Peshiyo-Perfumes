@@ -207,7 +207,6 @@ function TopSection() {
       </div>
       <hr className="top-line" />
 
-      {/* Checkout Combos Button */}
       <div className="combo-btn-container">
         <button className="combo-btn" onClick={scrollToCombos}>
           Checkout Combo's
