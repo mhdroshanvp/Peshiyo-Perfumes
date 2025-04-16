@@ -1,0 +1,62 @@
+.insta-banner {
+    background:linear-gradient(to right,#DBCFBC ,#DBCFBC);
+    padding: 25px;
+    text-align: center;
+    border-bottom: 1px solid #ccc;
+    animation: fadeIn 1s ease-in;
+    border-radius: 30px;
+    width: 350px;
+    height: 170px;
+  }
+  
+  .insta-headline {
+    font-size: 28px;
+    font-weight: bold;
+    color: #486053;
+    margin-bottom: 5px;
+    font-family: 'Times New Roman', Times, serif;
+  }
+  
+  .insta-subtext {
+    font-size: 15px;
+    color: #555;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-bottom: 15px;
+  }
+  
+  .insta-btn {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    align-items: center;
+    width: 200px;
+    padding: 10px 20px;
+    background-color: #e1306c;
+    color: white;
+    text-decoration: none;
+    border-radius: 25px;
+    font-weight: 500;
+    transition: background-color 0.3s ease;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  }
+  
+  .insta-btn:hover {
+    background-color: #c72b5e;
+  }
+
+  .insta-btn-container{
+    display: flex;
+    justify-content: center;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(-10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  

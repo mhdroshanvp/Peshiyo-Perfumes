@@ -8,12 +8,15 @@ import Sticky from '../Components/HomeComponents/Sticky/Sticky.jsx'
 import Blog from '../Components/HomeComponents/Blog/Blog.jsx'
 import NewsBulletin from '../Components/CommonComponents/NewsBulletin.jsx'
 import Form from '../Components/HomeComponents/FormModal/FormModal.jsx'
+import IntroSection from '../Components/HomeComponents/IntroSection/IntroSection.jsx'
+
 function HomePage() {
   return (
     <>
-    <Navbar />
+    <Navbar />  
     <NewsBulletin />
     <SwiperFunction />
+    <IntroSection />
     <Form />
     <Banner />
     <Sticky />

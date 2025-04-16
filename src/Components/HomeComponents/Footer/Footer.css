@@ -95,6 +95,32 @@
   .developer-credit a:hover {
     color: #fff;
   }
+
+  .contact-button{
+    background-color: #486053;
+    border: 1px rgba(0, 0, 0, 0) solid;
+    color: rgb(193, 190, 190);
+    width: 150px;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    font-size: 15px;
+    gap: 8px;
+  }
+
+  .contact-button:hover{
+    background-color: #456e58;
+    border: 1px #5b9676  solid;
+  }
+  .contact-button::after{
+    transition-delay: 2s;
+
+  }
+
+  /* ------------------------------------------------------------------------------ */
+  /* ------------------------------------------------------------------------------ */
   
   /* Responsive Design */
   @media (max-width: 768px) {

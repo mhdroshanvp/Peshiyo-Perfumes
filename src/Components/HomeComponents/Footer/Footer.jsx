@@ -1,22 +1,33 @@
-import React from 'react';
+import React,{useState} from 'react';
 import { FaWhatsapp , FaInstagram } from 'react-icons/fa';
 import { MdOutlineEmail } from "react-icons/md";
-
+import { MdReviews } from "react-icons/md";
 import './Footer.css';
 import logo from '../../../assets/BigLogo.png'
+import FormModal from '../FormModal/FormModal';
 
 function Footer() {
 
   const phoneNumber = '7559966190';
   const message = "Hello, I'm interested in your products!";
 
+  const [showModal, setShowModal] = useState(false);
+
   const handleShopClick = () => {
     const whatsappURL = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
     window.open(whatsappURL, '_blank');
   };
 
+  const handleContactClick = () => {
+    setShowModal(true);
+  };
+
+  const handleCloseModal = () => {
+    setShowModal(false);
+  };
 
   return (
+    <>
     <footer className='footer'>
       <div className='footer-container'>
         {/* Logo and Description */}
@@ -24,6 +35,7 @@ function Footer() {
           <div className='footer-logo'>
             <img src={logo} alt="Peshiyo Logo" />
           </div>
+          <button onClick={handleContactClick} className='contact-button'>Reviews<MdReviews /></button>
           <p className='footer-description'>
             "Fragrance is the invisible accessory that completes your personality."
           </p>
@@ -52,12 +64,17 @@ function Footer() {
 
       <div className='developer-credit'>
         <p>
-          {/* Developed by <a href="https://roshanvp.vercel.app/" target="_blank" rel="noopener noreferrer">Roshan</a> */}
           <p>&copy; 2025 Peshiyo. All rights reserved.</p>
         </p>
       </div>
 
     </footer>
+    {showModal && (
+      <FormModal isOpen={showModal} onClose={handleCloseModal} />
+    )}
+
+
+    </>
   );
 }
 
