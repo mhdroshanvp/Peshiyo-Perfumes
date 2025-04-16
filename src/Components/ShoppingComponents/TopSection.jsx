@@ -40,7 +40,7 @@ function TopSection() {
       image: bottle1,
       description: "A rich and sophisticated scent with woody undertones.",
       fragranceNotes: "Sandalwood, Musk, Amber",
-      message: "Hello, I'm interested in ordering PESHIYO PERFUME A ,8ML Size. Could you provide more details?"
+      message: "Hello, I'm interested in ordering OUD LAVENDER ,8ML or 6Ml (my preferred) Size. Could you provide more details?"
     },
     {
       id: 2,
@@ -50,7 +50,7 @@ function TopSection() {
       image: bottle2,
       description: "An enchanting blend of floral and citrus notes.",
       fragranceNotes: "Rose, Jasmine, Bergamot",
-      message: "Hello, I'm interested in ordering PESHIYO PERFUME B ,6ML Size. Could you provide more details?"
+      message: "Hello, I'm interested in ordering WHITE OUD ,6ML or 8ML (my preferred) Size. Could you provide more details?"
     },
     {
       id: 3,
@@ -60,7 +60,7 @@ function TopSection() {
       image: bottle2,
       description: "A bold and intense fragrance with deep spicy tones.",
       fragranceNotes: "Oud, Cardamom, Patchouli",
-      message: "Hello, I'm interested in ordering PESHIYO PERFUME C ,3ML Size. Could you provide more details?"
+      message: "Hello, I'm interested in ordering KUWAITI OUD,8 ML or 6ML (my preferred) Size. Could you provide more details?"
     },
     {
       id: 4,
@@ -70,7 +70,7 @@ function TopSection() {
       image: bottle3,
       description: "A bold and intense fragrance with deep spicy tones.",
       fragranceNotes: "Oud, Cardamom, Patchouli",
-      message: "Hello, I'm interested in ordering SINGLE PACK ARABIC PERFUME ,8ML Size. Could you provide more details?"
+      message: "Hello, I'm interested in ordering THE GOLD BEAST PERFUME ,8ML,6ML or 3ML (my preferred) Size. Could you provide more details?"
     },
     {
       id: 5,
@@ -80,7 +80,7 @@ function TopSection() {
       image: bottle4,
       description: "A bold and intense fragrance with deep spicy tones.",
       fragranceNotes: "Oud, Cardamom, Patchouli",
-      message: "Hello, I'm interested in ordering SINGLE PACK FRENCH PERFUME ,8ML Size. Could you provide more details?"
+      message: "Hello, I'm interested in ordering HUGO BOSS ,8ML or 6ML (my preferred) Size. Could you provide more details?"
     },
     {
       id: 6,
@@ -90,7 +90,7 @@ function TopSection() {
       image: bottle5,
       description: "A bold and intense fragrance with deep spicy tones.",
       fragranceNotes: "Oud, Cardamom, Patchouli",
-      message: "Hello, I'm interested in ordering SINGLE PACK FRENCH PERFUME ,8ML Size. Could you provide more details?"
+      message: "Hello, I'm interested in ordering CREED SILVER PERFUME ,8ML or 6ML (my preferred) Size. Could you provide more details?"
     },
     {
       id: 7,
@@ -100,7 +100,7 @@ function TopSection() {
       image: bottle2,
       description: "A bold and intense fragrance with deep spicy tones.",
       fragranceNotes: "Oud, Cardamom, Patchouli",
-      message: "Hello, I'm interested in ordering SINGLE PACK FRENCH PERFUME ,8ML Size. Could you provide more details?"
+      message: "Hello, I'm interested in ordering ROYAL OUD PERFUME ,8ML,6ML or 3ML (my preferred) Size. Could you provide more details?"
     },
     {
       id: 8,
@@ -110,7 +110,7 @@ function TopSection() {
       image: bottle9,
       description: "A bold and intense fragrance with deep spicy tones.",
       fragranceNotes: "Oud, Cardamom, Patchouli",
-      message: "Hello, I'm interested in ordering SINGLE PACK FRENCH PERFUME ,8ML Size. Could you provide more details?"
+      message: "Hello, I'm interested in ordering VELVET DESSERT ,8ML or 3ML (my preferred) Size. Could you provide more details?"
     },
     {
       id: 9,
@@ -120,7 +120,7 @@ function TopSection() {
       image: bottle1,
       description: "A bold and intense fragrance with deep spicy tones.",
       fragranceNotes: "Oud, Cardamom, Patchouli",
-      message: "Hello, I'm interested in ordering SINGLE PACK FRENCH PERFUME ,8ML Size. Could you provide more details?"
+      message: "Hello, I'm interested in ordering BERRY FRUITY PERFUME ,8ML or 6ML (my preferred) Size. Could you provide more details?"
     },
     {
       id: 9,
@@ -140,7 +140,7 @@ function TopSection() {
       image: bottle7,
       description: "A bold and intense fragrance with deep spicy tones.",
       fragranceNotes: "Oud, Cardamom, Patchouli",
-      message: "Hello, I'm interested in ordering SINGLE PACK FRENCH PERFUME ,8ML Size. Could you provide more details?"
+      message: "Hello, I'm interested in ordering PARIS PARADISE PERFUME ,8ML,6ML or 3ML (my preferred) Size. Could you provide more details?"
     }
   ];
 
@@ -215,39 +215,27 @@ function TopSection() {
       </div>
 
 
-      {/* <div className="filter-container">
-        <label>Filter by Size:</label>
-        <select onChange={(e) => setSelectedSize(e.target.value)}>
-          <option value="All">All</option>
-          <option value="3ML">3ML</option>
-          <option value="6ML">6ML</option>
-          <option value="8ML">8ML</option>
-        </select>
-
-        <label>Filter by Price:</label>
-        <select onChange={(e) => setSelectedPrice(e.target.value)}>
-          <option value="All">All</option>
-          <option value="0-199">₹0 - ₹199</option>
-          <option value="200-399">₹200 - ₹399</option>
-          <option value="400-699">₹400 - ₹699</option>
-          <option value="700+">₹700+</option>
-        </select>
-      </div> */}
-
-
       <div className="product-container">
         {filteredProducts.length > 0 ? (
           filteredProducts.map((product) => (
-            <div key={product.id} className="product-card">
-              {/* <img src={product.image} alt={product.name} /> */}
-              <h3>{product.name}</h3>
-              <p className="size-label">Size: {product.size}</p>
-              <p className="price-label">Price: {Array.isArray(product.price) ? product.price.join(' | ') : product.price} Rs</p>
-              <div className="product-buttons">
-                <button className="prd-details" onClick={() => openModal(product)}><FaInfoCircle className="prd-details-icon" /></button>
-                <button className="prd-buy" onClick={() => handleBuyBtn(product)}>Buy Now</button>
+              
+              <div key={product.id} className="product-card">
+                <div className="product-content">
+                  <div className="product-info">
+                    <h3>{product.name}</h3>
+                    <p className="size-label">Size: {product.size}</p>
+                    <p className="price-label">Price: {Array.isArray(product.price) ? product.price.join(' | ') : product.price} Rs</p>
+                  </div>
+                  <div className="product-hover-image">
+                    <img src={product.image} alt={product.name} />
+                  </div>
+                  <div className="product-buttons">
+                    <button className="prd-details" onClick={() => openModal(product)}><FaInfoCircle className="prd-details-icon" /></button>
+                    <button className="prd-buy" onClick={() => handleBuyBtn(product)}>Buy Now</button>
+                  </div>
+                </div>
               </div>
-            </div>
+
           ))
         ) : (
           <p className="no-results">No products found</p>

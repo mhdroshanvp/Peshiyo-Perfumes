@@ -61,11 +61,26 @@
   .product-card {
     background: #b0aea1;
     border-radius: 10px;
-    overflow: hidden;
+    /* overflow: hidden; */
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    padding: 15px;
     text-align: center;
-    transition: transform 0.3s ease-in-out;
+    /* transition: transform 0.3s ease-in-out; */
+    position: relative;
+    overflow: hidden;
+    padding: 1rem;
+    transition: all 0.3s ease;  
+  }
+  
+  .product-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+  }
+
+  .product-info {
+    transition: opacity 0.3s ease;
+    text-align: center;
   }
   
   .product-card:hover {
@@ -78,6 +93,14 @@
     height: auto;
     margin-bottom: 10px;
   }
+
+  .product-card:hover .product-info {
+    opacity: 0;
+  }
+
+  .product-card:hover .product-hover-image {
+    opacity: 1;
+  }
   
   .product-card h3 {
     font-size: 18px;
@@ -86,8 +109,44 @@
 
   .product-buttons{
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 1rem;
+    z-index: 2;
+    position: relative;
   }
+
+  .product-front{
+    transition: opacity 0.3s ease;
+  }
+
+  .product-hover-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 3.5rem; /* Adjust so it doesn't cover the buttons */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    z-index: 1;
+    transition: opacity 0.3s ease;
+  }
+
+  .product-hover-image img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+  }
+
+  .product-card:hover .product-front {
+    opacity: 0;
+  }
+  
+  .product-card:hover .product-hover-image {
+    opacity: 1;
+  }  
 
   .prd-details{
     display: flex;
