@@ -1,6 +1,7 @@
-*{
-  scroll-behavior: smooth;
+html {
+    scroll-behavior: smooth;
 }
+
 body{
     background:linear-gradient(to right,#DBCFBC ,#DBCFBC);
     margin: 0;
@@ -12,8 +13,3 @@ body{
     justify-content: center;
     align-items: center;
   }
-
-*{
-  scroll-behavior: smooth;
-}
-
