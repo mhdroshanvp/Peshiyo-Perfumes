@@ -1,11 +1,11 @@
 .insta-banner {
     background:linear-gradient(to right,#DBCFBC ,#DBCFBC);
-    padding: 25px;
+    padding: 20px;
     text-align: center;
     border-bottom: 1px solid #ccc;
     animation: fadeIn 1s ease-in;
     border-radius: 30px;
-    width: 350px;
+    width: 370px;
   }
   
   .insta-headline {
@@ -47,6 +47,17 @@
     display: flex;
     justify-content: center;
   }
+
+  .exit-btn{
+    display: flex;
+    justify-content: center;
+  }
+  .exit-btn img{
+    width: 60px;
+    cursor: pointer;
+  }
+
+
   
   @keyframes fadeIn {
     from {

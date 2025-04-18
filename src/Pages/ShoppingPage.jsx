@@ -24,13 +24,12 @@ function ShoppingPage() {
       <div data-aos="fade-down">
           <NewsBulletin />
       </div>
-      <div data-aos="fade-down">
-          <TopSection />
-      </div>
+
+      <TopSection />
+
       <StickyHome />
-      <div data-aos="fade-out">
-          <Footer />
-      </div>
+
+      <Footer />
     </>
   )
 }

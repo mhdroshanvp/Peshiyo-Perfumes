@@ -32,20 +32,18 @@ function HomePage() {
               <SwiperFunction />
           </div>
           <IntroSection />
-            <Form />
+          <Form />
           <div data-aos="fade-up">
               <Banner />
           </div>
-            <Sticky />
+          <Sticky />
           <div data-aos="fade-up">
               <Blog />
           </div>
           <div data-aos="fade-in">
               <Welcoming />
           </div>
-          <div data-aos="fade-out">
-              <Footer />
-          </div>
+          <Footer />
       </>
   );
 }

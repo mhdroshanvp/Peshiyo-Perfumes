@@ -1,11 +1,12 @@
 .news-bulletin {
     width: 100%;
-    background: #b0aea1;
+    background:linear-gradient(to right,#DBCFBC ,#DBCFBC);
     text-align: center;
+    border-bottom: 1px #c5bcad solid;
     padding: 10px 0;
     font-weight: bold;
     font-size: 18px;
-    color: #545A3F;
+    color: #c43232;
     font-family: 'Times New Roman', Times, serif;
     overflow: hidden;
     position: relative;
