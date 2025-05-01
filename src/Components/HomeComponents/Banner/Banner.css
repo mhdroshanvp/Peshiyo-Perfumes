@@ -3,16 +3,15 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  /* margin-top: 100px; */
 }
 
 .bannerImage {
   width: 300px;
-  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .bannerImage:hover {
-  transform: scale(1.05); /* Slightly enlarge the image */
+  transform: scale(1.05);
 }
 
 .bannerText{
@@ -50,11 +49,11 @@ html, body {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+  background-color: rgba(0, 0, 0, 0.5);
   display: flex;
   justify-content: center;
   align-items: center;
-  z-index: 1000; /* Ensure it's above other content */
+  z-index: 1000;
 }
 
 .modal {
@@ -80,7 +79,7 @@ html, body {
 }
 
 .close-btn {
-  padding: 10px 20px; /* Adjust padding as needed */
+  padding: 10px 20px;
   border: none;
   border-radius: 5px;
   font-size: 16px;
@@ -89,9 +88,9 @@ html, body {
 }
 
 .close-btn img {
-  width: 50px; /* Set the desired width */
-  height: 50px; /* Set the desired height */
-  object-fit: cover; /* Ensures the image scales properly */
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
 }
 
 .info{
@@ -103,9 +102,6 @@ html, body {
 /* ----------------------------------------- */
 
 @media (max-width: 319px) {
-  /* .banner{
-      margin-top: 550px;
-  } */
   .bannerText{
       display: flex;
       justify-content: center;
@@ -121,9 +117,6 @@ html, body {
 }
 
 @media (min-width: 319px) and (max-width:399.98px) { 
-  /* .banner{
-      margin-top: 500px;
-  } */
   .bannerText{
       display: flex;
       justify-content: center;
@@ -133,7 +126,6 @@ html, body {
       display: flex;
       justify-content: center;
       width: 300px;
-      /* margin-left: 58px; */
   }
   .bannerImage{
       width: 400px;
@@ -141,9 +133,6 @@ html, body {
 }
 
 @media (min-width:400px) and (max-width:567px){
-  /* .banner{
-      margin-top: 500px;
-  } */
   .bannerText{
       display: flex;
       justify-content: center;
@@ -159,9 +148,6 @@ html, body {
 }
 
 @media (min-width:567px) and (max-width:767.98px){
-  /* .banner{
-      margin-top: 400px;
-  } */
   .bannerText{
       display: flex;
       justify-content: center;
@@ -178,9 +164,6 @@ html, body {
 }
 
 @media (min-width: 768px) and (max-width: 991.98px){
-  /* .banner{
-      margin-top: 400px;
-  } */
   .bannerText{
       display: flex;
       justify-content: center;
@@ -196,9 +179,6 @@ html, body {
 }
 
 @media (min-width: 992px) and (max-width: 1200px){
-  /* .banner{
-      margin-top: 300px;
-  } */
   .bannerText{
       display: flex;
       justify-content: center;
@@ -230,7 +210,6 @@ html, body {
 
 
 /* -------------------------------------------------------------------------- */
-/* start Container */
 .start-container {
   display: flex;
   justify-content: center;
@@ -238,7 +217,6 @@ html, body {
   margin: 50px;
 }
 
-/* start Box */
 .start-box {
   width: 100%;
   max-width: 1200px;
@@ -250,25 +228,22 @@ html, body {
   padding: 20px;
   gap: 20px;
   border-radius: 10px;
-  flex-wrap: wrap; /* Allow wrapping on smaller screens */
+  flex-wrap: wrap;
 }
 
-/* Image */
 .start-box img {
   width: 100%;
-  max-width: 300px; /* Prevent image from becoming too large */
+  max-width: 300px; 
   height: auto;
   object-fit: contain;
-  transition: transform 0.3s ease-in-out; /* Smooth transition */
+  transition: transform 0.3s ease-in-out; 
 }
 
-/* Zoom-in effect on hover */
 .start-box img:hover {
-  transform: scale(1.1); /* Slightly increase size */
+  transform: scale(1.1); 
 }
 
 
-/* start Text */
 .start-text {
   margin: 20px;
   font-size: 16px;
@@ -312,7 +287,7 @@ html, body {
   }
 
   .start-box img {
-      max-width: 200px; /* Smaller image on mobile */
+      max-width: 200px;
   }
 }
 

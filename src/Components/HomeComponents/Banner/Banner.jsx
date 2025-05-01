@@ -39,13 +39,11 @@ function Banner() {
         <div className='banner-buttons'>
           <Link to='/shop'>
 
-            {/* <button class="shopNow-btn animate__animated animate__zoomIn">Shop Now</button> */}
+           
             <button class="custom-btn btn-3 animate__animated animate__zoomIn"><span>Shop Now</span></button>
           </Link>
         </div>
-        {/* <p className='banner-parag animate__animated animate__lightSpeedInLeft'>
-          At Peshiyo, we believe fragrance is an experience. Using premium, long-lasting ingredients, we craft captivating scents with rich, deep notes that linger all day. Our meticulous blending ensures high concentration, while each bottle offers the perfect balance of quantity and quality. Whether you love a light mist or a bold aroma, our formulations promise a luxurious, lasting fragrance journey.
-        </p> */}
+
             <div className='start-container'>
                 <div className='start-box'>
                     <p className='start-text'>

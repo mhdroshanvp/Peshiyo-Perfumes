@@ -1,5 +1,5 @@
 .welcome-banner {
-  width: 100vw; /* Full-width */
+  width: 100vw; 
   max-width: 100%;
   margin: 0 auto;
   padding: 0;
@@ -16,30 +16,29 @@
 
 .swiper-slide img {
   width: 100%;
-  height: calc(100vw * 9 / 16); /* Maintain 16:9 aspect ratio */
+  height: calc(100vw * 9 / 16); 
   object-fit: cover;
 }
 
-/* Responsive Adjustments */
-@media (max-width: 1024px) { /* Tablets */
+
+@media (max-width: 1024px) { 
   .swiper-slide img {
     height: calc(100vw * 9 / 16);
   }
 }
 
-@media (max-width: 768px) { /* Mobile */
+@media (max-width: 768px) { 
   .swiper-slide img {
-    height: calc(100vw * 9 / 16); /* Maintain aspect ratio */
+    height: calc(100vw * 9 / 16); 
   }
 }
 
-@media (max-width: 480px) { /* Small screens */
+@media (max-width: 480px) { 
   .swiper-slide img {
     height: calc(100vw * 9 / 16);
   }
 }
 
-/* Swiper Pagination */
 .swiper-pagination-bullet {
   background-color: #fff;
   opacity: 0.5;

@@ -17,7 +17,6 @@ html, body {
   z-index: 1000;
 }
 
-/* Modal Box */
 .login-box {
   width: 90%;
   max-width: 400px;
@@ -30,7 +29,7 @@ html, body {
   animation: fadeIn 0.3s ease-in-out;
 }
 
-/* Close Button */
+
 .close-btn {
   position: absolute;
   top: 15px;
@@ -47,7 +46,7 @@ html, body {
   color: #f40303;
 }
 
-/* Headings */
+
 .login-box h2 {
   color: #fff;
   margin-bottom: 20px;
@@ -55,7 +54,7 @@ html, body {
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
-/* Input Fields */
+
 .user-box {
   position: relative;
   margin-bottom: 25px;
@@ -94,7 +93,6 @@ html, body {
   color: #b0aea1;
 }
 
-/* Submit Button */
 .submit-btn {
   width: 50%;
   padding: 10px;
@@ -113,7 +111,7 @@ html, body {
   color: #ffffff  ;
 }
 
-/* Animation */
+
 @keyframes fadeIn {
   from {
     opacity: 0;

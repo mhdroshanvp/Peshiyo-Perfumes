@@ -1,24 +1,26 @@
 .insta-banner {
-    background:linear-gradient(to right,#DBCFBC ,#DBCFBC);
+    background: rgba(16, 16, 16, 0.213);       
     padding: 20px;
     text-align: center;
-    border-bottom: 1px solid #ccc;
+    border-bottom: 1px solid #cbcbcb;
+    border: none;
     animation: fadeIn 1s ease-in;
     border-radius: 30px;
     width: 370px;
+    border: 1px rgba(190, 190, 190, 0.089) solid;
   }
   
   .insta-headline {
     font-size: 28px;
     font-weight: bold;
-    color: #486053;
+    color: #ffffff7d;
     margin-bottom: 5px;
     font-family: 'Times New Roman', Times, serif;
   }
   
   .insta-subtext {
     font-size: 15px;
-    color: #555;
+    color: #f5f3f3a5;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     margin-bottom: 15px;
   }
@@ -30,8 +32,8 @@
     align-items: center;
     width: 200px;
     padding: 10px 20px;
-    background-color: #e1306c;
-    color: white;
+    background-color: #0b4b0b8e;
+    color: rgba(255, 255, 255, 0.785);
     text-decoration: none;
     border-radius: 25px;
     font-weight: 500;
@@ -40,7 +42,7 @@
   }
   
   .insta-btn:hover {
-    background-color: #c72b5e;
+    background-color: #0b4b0bbb;
   }
 
   .insta-btn-container{
@@ -48,13 +50,30 @@
     justify-content: center;
   }
 
+   .btn-container{
+    display: flex;
+    justify-content: center;
+    padding-top: 10px;
+  }
   .exit-btn{
     display: flex;
     justify-content: center;
-  }
-  .exit-btn img{
-    width: 60px;
+    align-items: center;
+    height: 30px;
+    width: 130px;
+    text-decoration: none;
+    border-radius: 25px;
+    font-weight: 500;
+    background-color: #7d0c0ca5;
+    border: none;
+    transition: background-color 0.3s ease;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: rgba(255, 255, 255, 0.785);
     cursor: pointer;
+  }
+
+  .exit-btn:hover{
+    background-color: rgba(160, 17, 17, 0.55)82;
   }
 
 

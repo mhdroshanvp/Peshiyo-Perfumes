@@ -14,7 +14,7 @@ function NewsBulletin() {
   useEffect(() => {
     const interval = setInterval(() => {
       setIndex((prevIndex) => (prevIndex + 1) % newsItems.length);
-    }, 3000); // Change news every 3 seconds
+    }, 3000);
 
     return () => clearInterval(interval);
   }, []);

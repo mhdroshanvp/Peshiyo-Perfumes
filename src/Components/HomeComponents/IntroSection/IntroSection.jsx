@@ -24,10 +24,11 @@ function IntroSection() {
               <p className="insta-headline">Let's Connect on Instagram</p>
               <p className="insta-subtext">Exclusive offers, updates & behind-the-scenes from Peshiyo. Let your feed smell better</p>
               <div className='insta-btn-container'>
-              <a href="https://www.instagram.com/peshiyo_/" target="_blank" rel="noopener noreferrer" className="insta-btn">Visit Our Instagram <FaInstagram /></a>
+                <a href="https://www.instagram.com/peshiyo_/" target="_blank" rel="noopener noreferrer" className="insta-btn">Visit Our Instagram <FaInstagram /></a>
               </div>
-            <div className='exit-btn' onClick={closeModal}><img src="https://media1.giphy.com/media/EqHmFtiG0xH3jHWnGb/giphy.gif?cid=6c09b952bqx7df9ysul3pu66tl6sy1emqw8ed0vbtn91g2j9&ep=v1_stickers_search&rid=giphy.gif&ct=s" alt="exit gif" /></div>
-            {/* new button added */}
+              <div className='btn-container'>
+                <button className='exit-btn' onClick={closeModal}>i'll do it later</button>
+              </div>
             </div>
         </div>
       )}

@@ -30,7 +30,6 @@ function Footer() {
     <>
     <footer className='footer'>
       <div className='footer-container'>
-        {/* Logo and Description */}
         <div className='footer-section'>
           <div className='footer-logo'>
             <img src={logo} alt="Peshiyo Logo" />
@@ -42,7 +41,7 @@ function Footer() {
         </div>
 
 
-        {/* Social Media Links */}
+
         <div className='footer-section'>
           <h3 className='footer-heading'>Follow Us</h3>
           <div className='social-media'>

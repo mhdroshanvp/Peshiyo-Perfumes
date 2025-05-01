@@ -61,10 +61,8 @@
   .product-card {
     background: #b0aea1;
     border-radius: 10px;
-    /* overflow: hidden; */
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     text-align: center;
-    /* transition: transform 0.3s ease-in-out; */
     position: relative;
     overflow: hidden;
     padding: 1rem;
@@ -125,7 +123,7 @@
     top: 0;
     left: 0;
     right: 0;
-    bottom: 3.5rem; /* Adjust so it doesn't cover the buttons */
+    bottom: 3.5rem;
     display: flex;
     justify-content: center;
     align-items: center;
