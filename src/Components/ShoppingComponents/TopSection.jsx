@@ -229,7 +229,7 @@ function TopSection() {
                     <img src={product.image} alt={product.name} />
                   </div>
                   <div className="product-buttons">
-                    <button className="prd-details" onClick={() => openModal(product)}><FaInfoCircle className="prd-details-icon" /></button>
+                    <button className="prd-details" onClick={() => openModal(product)}>know more</button>
                     <button className="prd-buy" onClick={() => handleBuyBtn(product)}>Buy Now</button>
                   </div>
                 </div>
