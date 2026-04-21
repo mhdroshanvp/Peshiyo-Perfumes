@@ -1,20 +1,7 @@
-<<<<<<< HEAD
 html {
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 
-body{
-    background:linear-gradient(to right,#DBCFBC ,#DBCFBC);
-    margin: 0;
-}
-
-.loader{
-    height: 80vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-=======
 :root {
   --color-primary-cream: #F9F6F0;
   --color-primary-offwhite: #FAF9F6;
@@ -110,4 +97,10 @@ button {
   height: 50px;
   background-color: rgba(183, 110, 121, 0.1);
 }
->>>>>>> 94c4f0e (huge change in the UI)
+
+.loader {
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

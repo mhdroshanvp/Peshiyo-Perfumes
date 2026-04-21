@@ -1,25 +1,7 @@
-<<<<<<< HEAD
-import React from 'react';
-import './Navbar.css';
-import 'animate.css';
-=======
-import React, { useState, useEffect } from 'react';
->>>>>>> 94c4f0e (huge change in the UI)
+import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import './Navbar.css';
 
-<<<<<<< HEAD
-function Navbar() {
-
-  return (
-    <>
-      <Link to='/'>
-        <div className="navbar">
-          <div className="site-name">PESHIYO</div>
-        </div>
-      </Link>
-    </>
-=======
 const Navbar = () => {
   const [scrolled, setScrolled] = useState(false);
 
@@ -45,7 +27,6 @@ const Navbar = () => {
         {/* Intentionally empty for balance, as it's not an e-commerce store */}
       </div>
     </nav>
->>>>>>> 94c4f0e (huge change in the UI)
   );
 };
 

@@ -1,4 +1,3 @@
-import React from 'react';
 import { Link } from 'react-router-dom';
 import './Hero.css';
 import heroBottle from '../../../assets/perfume-bottle-8.png';

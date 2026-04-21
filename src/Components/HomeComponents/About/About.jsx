@@ -1,12 +1,13 @@
-import React, { useEffect, useRef, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import './About.css';
-import aboutImg from '../../../assets/Content for perfume brand.jpg';
+import aboutImg from '../../../assets/Group 412.png';
 
 const About = () => {
   const [isVisible, setIsVisible] = useState(false);
   const sectionRef = useRef(null);
 
   useEffect(() => {
+    const el = sectionRef.current;
     const observer = new IntersectionObserver(
       ([entry]) => {
         if (entry.isIntersecting) {
@@ -17,13 +18,13 @@ const About = () => {
       { threshold: 0.2 }
     );
 
-    if (sectionRef.current) {
-      observer.observe(sectionRef.current);
+    if (el) {
+      observer.observe(el);
     }
 
     return () => {
-      if (sectionRef.current) {
-        observer.unobserve(sectionRef.current);
+      if (el) {
+        observer.unobserve(el);
       }
     };
   }, []);
@@ -34,7 +35,7 @@ const About = () => {
         <div className="about-content">
           <h2 className="about-title">The Art of Perfumery</h2>
           <p className="about-quote">
-            "Every scent tells a story before a single word is spoken."
+            &ldquo;Every scent tells a story before a single word is spoken.&rdquo;
           </p>
           <div className="about-text-wrap">
             <p className="about-text">

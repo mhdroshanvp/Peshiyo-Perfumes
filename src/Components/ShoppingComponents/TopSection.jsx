@@ -1,24 +1,20 @@
-import React, { useState,useRef } from "react";
+import { useState, useRef } from "react";
 import "./TopSection.css";
 import bottle1 from "../../assets/prd1.jpg";
 import bottle2 from "../../assets/prd2.jpg";
 import bottle3 from "../../assets/prd3.jpg";
 import bottle4 from "../../assets/prd4.jpg";
 import bottle5 from "../../assets/prd5.jpg";
-import bottle6 from "../../assets/prd6.jpg";
 import bottle7 from "../../assets/prd7.jpg";
 import bottle8 from "../../assets/prd8.jpg";
 import bottle9 from "../../assets/prd9.jpg";
-
-import { GiDelicatePerfume } from "react-icons/gi";
-import { FaInfoCircle } from "react-icons/fa";
 
 
 
 
 function TopSection() {
-  const [selectedSize, setSelectedSize] = useState("All");
-  const [selectedPrice, setSelectedPrice] = useState("All");
+  const [selectedSize] = useState("All");
+  const [selectedPrice] = useState("All");
   const [selectedProduct, setSelectedProduct] = useState(null);
 
   const comboSectionRef = useRef(null);
@@ -209,7 +205,7 @@ function TopSection() {
 
       <div className="combo-btn-container">
         <button className="combo-btn" onClick={scrollToCombos}>
-          Checkout Combo's
+          Checkout Combo&apos;s
         </button>
       </div>
 

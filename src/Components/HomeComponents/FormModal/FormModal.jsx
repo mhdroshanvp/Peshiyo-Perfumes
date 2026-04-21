@@ -1,12 +1,13 @@
-  import React, { useState, useEffect, useRef } from 'react';
-  import { toast } from 'react-toastify';
-  import emailjs from '@emailjs/browser';
-  import './FormModal.css';
+/* eslint-disable react/prop-types -- modal contract is stable */
+import { useState, useRef } from 'react';
+import { toast } from 'react-toastify';
+import emailjs from '@emailjs/browser';
+import './FormModal.css';
 
-  function FormModal({ isOpen, onClose }) {
-    const form = useRef();
-  
-    const [formData, setFormData] = useState({
+function FormModal({ isOpen, onClose }) {
+  const form = useRef();
+
+  const [formData, setFormData] = useState({
       user_name: '',
       user_email: '',
       message: '',

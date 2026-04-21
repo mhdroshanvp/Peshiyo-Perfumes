@@ -22,8 +22,6 @@
 
 // export default Banner;
 
-import React from 'react';
-import bannerImage from '../../../assets/bannerImg1.png';
 import './Banner.css';
 import { Link } from 'react-router-dom';
 
@@ -40,7 +38,7 @@ function Banner() {
           <Link to='/shop'>
 
            
-            <button class="custom-btn btn-3 animate__animated animate__zoomIn"><span>Shop Now</span></button>
+            <button type="button" className="custom-btn btn-3 animate__animated animate__zoomIn"><span>Shop Now</span></button>
           </Link>
         </div>
 
@@ -48,7 +46,7 @@ function Banner() {
                 <div className='start-box'>
                     <p className='start-text'>
                     At Peshiyo, we believe that a great fragrance is more than just a scent—it’s an expression of personality, confidence, and elegance. Our collection of premium perfumes is carefully curated to bring you high-quality, long-lasting fragrances at prices that won’t break the bank.
-Shopping with us is simple and seamless. Browse our collection, find your signature scent, and with just a click of the "Buy Now" button, you’ll be redirected to WhatsApp, where our team will assist you in completing your purchase. We’re here to make luxury accessible, so you can enjoy the art of fine fragrance without compromise.
+Shopping with us is simple and seamless. Browse our collection, find your signature scent, and with just a click of the &ldquo;Buy Now&rdquo; button, you&apos;ll be redirected to WhatsApp, where our team will assist you in completing your purchase. We&apos;re here to make luxury accessible, so you can enjoy the art of fine fragrance without compromise.
 Discover Peshiyo today and let your scent tell your story.
                     </p>
                 </div>

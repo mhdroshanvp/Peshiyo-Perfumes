@@ -1,26 +1,8 @@
-body {
-  margin: 0;
-  font-family: Arial, sans-serif;
-  padding-top: 60px;
-}
-
 .navbar {
-<<<<<<< HEAD
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 8px 0;
-=======
->>>>>>> 94c4f0e (huge change in the UI)
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
-<<<<<<< HEAD
-  z-index: 1000;
-  background: linear-gradient(to right, #DBCFBC, #DBCFBC, #DBCFBC);
-  border-bottom: 1px solid #c5bcad;
-=======
   padding: 2.5rem 5rem;
   display: flex;
   justify-content: space-between;
@@ -36,7 +18,6 @@ body {
   backdrop-filter: blur(10px);
   color: var(--color-text-warmblack);
   border-bottom: 1px solid rgba(0, 0, 0, 0.03);
->>>>>>> 94c4f0e (huge change in the UI)
 }
 
 .nav-left,
@@ -50,14 +31,6 @@ body {
   justify-content: flex-end;
 }
 
-<<<<<<< HEAD
-
-@media (max-width: 767px) {
-  .site-name {
-    font-size: 22px;
-  }
-}
-=======
 .nav-link {
   font-size: 0.85rem;
   letter-spacing: 1.5px;
@@ -114,4 +87,3 @@ body {
     display: none;
   }
 }
->>>>>>> 94c4f0e (huge change in the UI)

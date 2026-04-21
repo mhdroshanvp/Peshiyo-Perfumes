@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 import './StickyHome.css';
 import { FaHome } from "react-icons/fa";
 import { FaArrowUp } from "react-icons/fa";

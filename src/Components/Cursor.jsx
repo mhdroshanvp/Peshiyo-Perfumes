@@ -1,25 +1,31 @@
-import React, { useEffect, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 
 const Cursor = () => {
   const [position, setPosition] = useState({ x: 0, y: 0 });
   const [followerPosition, setFollowerPosition] = useState({ x: 0, y: 0 });
-  const [isHovering, setIsHovering] = useState(false);
+  const cursorRef = useRef({ x: 0, y: 0 });
+  const followerRef = useRef({ x: 0, y: 0 });
+  const rafRef = useRef(0);
 
   useEffect(() => {
     const updatePosition = (e) => {
-      setPosition({ x: e.clientX, y: e.clientY });
+      cursorRef.current = { x: e.clientX, y: e.clientY };
+      setPosition(cursorRef.current);
     };
 
-    const updateFollower = () => {
-      setFollowerPosition((prev) => ({
-        x: prev.x + (position.x - prev.x) * 0.15,
-        y: prev.y + (position.y - prev.y) * 0.15,
-      }));
-      requestAnimationFrame(updateFollower);
+    const tick = () => {
+      const target = cursorRef.current;
+      const prev = followerRef.current;
+      followerRef.current = {
+        x: prev.x + (target.x - prev.x) * 0.15,
+        y: prev.y + (target.y - prev.y) * 0.15,
+      };
+      setFollowerPosition(followerRef.current);
+      rafRef.current = requestAnimationFrame(tick);
     };
 
+    rafRef.current = requestAnimationFrame(tick);
     window.addEventListener('mousemove', updatePosition);
-    const animationFrameId = requestAnimationFrame(updateFollower);
 
     const handleMouseOver = (e) => {
       if (
@@ -29,13 +35,11 @@ const Cursor = () => {
         e.target.closest('button') ||
         e.target.classList.contains('hover-target')
       ) {
-        setIsHovering(true);
         document.body.classList.add('cursor-hover');
       }
     };
 
     const handleMouseOut = () => {
-      setIsHovering(false);
       document.body.classList.remove('cursor-hover');
     };
 
@@ -46,17 +50,17 @@ const Cursor = () => {
       window.removeEventListener('mousemove', updatePosition);
       window.removeEventListener('mouseover', handleMouseOver);
       window.removeEventListener('mouseout', handleMouseOut);
-      cancelAnimationFrame(animationFrameId);
+      cancelAnimationFrame(rafRef.current);
     };
-  }, [position]);
+  }, []);
 
   return (
     <>
-      <div 
+      <div
         className="custom-cursor"
         style={{ left: `${position.x}px`, top: `${position.y}px` }}
       />
-      <div 
+      <div
         className="custom-cursor-follower"
         style={{ left: `${followerPosition.x}px`, top: `${followerPosition.y}px` }}
       />
