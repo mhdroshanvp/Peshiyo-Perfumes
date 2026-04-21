@@ -5,30 +5,113 @@ body {
 }
 
 .navbar {
+<<<<<<< HEAD
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 8px 0;
+=======
+>>>>>>> 94c4f0e (huge change in the UI)
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
+<<<<<<< HEAD
   z-index: 1000;
   background: linear-gradient(to right, #DBCFBC, #DBCFBC, #DBCFBC);
   border-bottom: 1px solid #c5bcad;
+=======
+  padding: 2.5rem 5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1000;
+  transition: all 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+  color: var(--color-primary-cream);
 }
 
-.site-name {
-  font-family: 'Times New Roman', Times, serif;
-  font-size: 26px;
-  font-weight: lighter;
-  color: #2b3e34;
-  margin: 10px;
+.navbar.scrolled {
+  padding: 1.5rem 5rem;
+  background-color: rgba(252, 251, 248, 0.95);
+  backdrop-filter: blur(10px);
+  color: var(--color-text-warmblack);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.03);
+>>>>>>> 94c4f0e (huge change in the UI)
 }
 
+.nav-left,
+.nav-right {
+  display: flex;
+  gap: 3rem;
+  flex: 1;
+}
+
+.nav-right {
+  justify-content: flex-end;
+}
+
+<<<<<<< HEAD
 
 @media (max-width: 767px) {
   .site-name {
     font-size: 22px;
   }
 }
+=======
+.nav-link {
+  font-size: 0.85rem;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  transition: opacity 0.4s ease;
+  font-weight: 500;
+}
+
+.nav-link:hover {
+  opacity: 0.6;
+}
+
+.nav-center {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.nav-logo {
+  font-family: var(--font-heading);
+  font-size: 2.2rem;
+  font-weight: 500;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  transition: transform 0.4s ease;
+}
+
+.nav-logo:hover {
+  transform: scale(1.02);
+}
+
+@media (max-width: 768px) {
+  .navbar,
+  .navbar.scrolled {
+    padding: 1rem 1.25rem;
+    flex-wrap: wrap;
+    row-gap: 0.65rem;
+  }
+
+  .nav-center {
+    order: 1;
+    flex: 1 1 100%;
+    justify-content: center;
+  }
+
+  .nav-left {
+    order: 2;
+    flex: 1 1 100%;
+    justify-content: center;
+    gap: 2rem;
+  }
+
+  .nav-right {
+    display: none;
+  }
+}
+>>>>>>> 94c4f0e (huge change in the UI)

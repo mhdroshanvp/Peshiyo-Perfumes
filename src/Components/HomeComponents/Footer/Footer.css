@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 .footer {
     background-color: #2b3e34;
@@ -142,3 +143,154 @@
 
 
   
+=======
+.footer {
+  background-color: var(--color-bg-warmwhite);
+  padding: 6rem 5rem 2rem;
+  border-top: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  gap: 5rem;
+  margin-bottom: 5rem;
+}
+
+.footer-brand {
+  flex: 1;
+  max-width: 400px;
+}
+
+.footer-logo {
+  font-family: var(--font-heading);
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: var(--color-text-warmblack);
+}
+
+.footer-tagline {
+  font-size: 1rem;
+  color: var(--color-text-light);
+  line-height: 1.6;
+}
+
+.footer-links-grid {
+  display: flex;
+  gap: 4rem;
+}
+
+.footer-col-title {
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  margin-bottom: 1.5rem;
+  color: var(--color-text-warmblack);
+}
+
+.footer-list {
+  list-style: none;
+}
+
+.footer-list li {
+  margin-bottom: 0.8rem;
+}
+
+.footer-list a {
+  font-size: 0.9rem;
+  color: var(--color-text-light);
+  transition: color 0.3s ease;
+}
+
+.footer-list a:hover {
+  color: var(--color-accent-rosegold);
+}
+
+.footer-bottom {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 2rem;
+  border-top: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.footer-socials {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.social-link {
+  font-size: 1.2rem;
+  color: var(--color-accent-rosegold);
+  transition: opacity 0.3s ease;
+}
+
+.social-link:hover {
+  opacity: 0.6;
+}
+
+.footer-legal {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 0.35rem;
+  text-align: right;
+}
+
+.footer-copyright {
+  font-size: 0.85rem;
+  color: var(--color-text-light);
+}
+
+.footer-developer {
+  margin: 0;
+  font-size: 0.68rem;
+  letter-spacing: 0.04em;
+  color: rgba(102, 102, 102, 0.72);
+}
+
+.footer-developer-link {
+  color: rgba(183, 110, 121, 0.55);
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  transition: color 0.25s ease, border-color 0.25s ease;
+}
+
+.footer-developer-link:hover {
+  color: rgba(183, 110, 121, 0.85);
+  border-bottom-color: rgba(183, 110, 121, 0.35);
+}
+
+@media (max-width: 992px) {
+  .footer-container {
+    flex-direction: column;
+    gap: 4rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .footer {
+    padding: 4rem 2rem 2rem;
+  }
+
+  .footer-links-grid {
+    flex-direction: column;
+    gap: 2.5rem;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    gap: 1.5rem;
+    text-align: center;
+  }
+
+  .footer-legal {
+    align-items: center;
+    text-align: center;
+  }
+}
+>>>>>>> 94c4f0e (huge change in the UI)
